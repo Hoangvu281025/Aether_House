@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Dropdown Demo</title>
+<style>
+  .content_nav__category__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    background: #f5f5f5;
+    padding: 10px;
+  }
+
+  .content_nav__category__item {
+    position: relative;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+
+  .dropdown {
+    /* display: none; */
+    position: absolute;
+    top: -100%; /* dưới mục cha */
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    z-index: 999;
+  }
+
+  .dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .dropdown ul li {
+    padding: 8px 12px;
+  }
+
+  .dropdown ul li:hover {
+    background-color: #eee;
+  }
+
+  /* Khi active thì hiện dropdown */
+  .content_nav__category__item.active .dropdown {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<ul class="content_nav__category__list">
+  <li class="content_nav__category__item">
+    New
+    <div class="dropdown">
+      <ul>
+        <li>Hàng mới về</li>
+        <li>Studio yêu thích</li>
+        <li>Ngoài trời</li>
+        <li>Bản chỉnh sửa tiện nghi gia đình</li>
+        <li>Ánh sáng tư thế</li>
+      </ul>
+    </div>
+  </li>
+  <li class="content_nav__category__item">
+    Products
+    <div class="dropdown">
+      <ul>
+        <li>Sản phẩm 1</li>
+        <li>Sản phẩm 2</li>
+        <li>Sản phẩm 3</li>
+      </ul>
+    </div>
+  </li>
+  <li class="content_nav__category__item">About Us</li>
+  <li class="content_nav__category__item">Contact</li>
+</ul>
+
+<script>
+  document.querySelectorAll('.content_nav__category__item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.stopPropagation(); // Ngăn không cho lan ra ngoài
+      const isActive = this.classList.contains('active');
+
+      // Ẩn tất cả dropdown khác
+      document.querySelectorAll('.content_nav__category__item').forEach(i => i.classList.remove('active'));
+
+      // Nếu chưa active thì bật lên
+      if (!isActive) {
+        this.classList.add('active');
+      }
+    });
+  });
+
+  // Click ra ngoài thì ẩn tất cả dropdown
+  document.addEventListener('click', function() {
+    document.querySelectorAll('.content_nav__category__item').forEach(i => i.classList.remove('active'));
+  });
+</script>
+
+</body>
+</html>

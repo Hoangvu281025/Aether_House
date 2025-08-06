@@ -1,0 +1,244 @@
+@import url('../common/bass.css');
+@import url('../common/utils.css');
+
+
+.container_login{
+    background-image: url(../../images/login/background_2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.table_form{
+    background-color: rgb(255, 255, 255 , 0.7);
+    backdrop-filter: blur(5px);                /* làm mờ ảnh nền phía sau */
+    -webkit-backdrop-filter: blur(5px); 
+    width: 500px;
+    border-radius: 10px;
+    padding: 5rem 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0.2rem solid var(--white-color);
+}
+
+.logo img{
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+}
+
+.title {
+    padding: 10px 0;
+}
+.title p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-color);
+    margin: 10px 0;
+}
+.title p:nth-child(2){
+    font-size: 14px;
+    color: var(--black-color);
+    margin: 10px 0;
+}
+
+
+
+.email {
+    margin: 20px 0 10px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-color);
+    transition: all 0.2s ease;
+}
+
+.email:focus {
+    border: 1px solid var(--black-color);
+    /* outline: none; */ /* Có thể thêm nếu muốn bỏ viền mặc định của trình duyệt */
+}
+
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    /* background-color: var(--black-color); */
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#loginBtn {
+    background-color: #e4e3e3; /* màu xám khi disabled */
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn_otp {
+    background-color: var(--black-color); 
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn.active {
+    background-color: var(--black-color); /* màu nền khi bật */
+    color: var(--white-color);
+
+    cursor: pointer;
+}
+
+
+.footer_entercode{
+    margin-top: 20px;
+}
+
+.footer_entercode a{
+    color: var(--black-color);
+}
+
+.footer_entercode a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+@media (min-width:768px){
+
+} 
+@media (min-width: 1024px){
+
+}
+@media (min-width:1280px){
+    .container_login{
+    background-image: url(../../images/login/background_2.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.table_form{
+    background-color: rgb(255, 255, 255 , 0.7);
+    backdrop-filter: blur(5px);                /* làm mờ ảnh nền phía sau */
+    -webkit-backdrop-filter: blur(5px); 
+    width: 500px;
+    border-radius: 10px;
+    padding: 5rem 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0.2rem solid var(--white-color);
+}
+
+.logo img{
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+}
+
+.title {
+    padding: 10px 0;
+}
+.title p:nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-color);
+    margin: 10px 0;
+}
+.title p:nth-child(2){
+    font-size: 14px;
+    color: var(--black-color);
+    margin: 10px 0;
+}
+
+
+
+.email {
+    margin: 20px 0 10px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-color);
+    transition: all 0.2s ease;
+}
+
+.email:focus {
+    border: 1px solid var(--black-color);
+    /* outline: none; */ /* Có thể thêm nếu muốn bỏ viền mặc định của trình duyệt */
+}
+
+
+button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#loginBtn {
+    background-color: #e4e3e3; 
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn_otp {
+    background-color: var(--black-color); 
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginBtn.active {
+    background-color: var(--black-color); 
+    color: var(--white-color);
+
+    cursor: pointer;
+}
+
+
+.footer_entercode{
+    margin-top: 20px;
+}
+
+.footer_entercode a{
+    color: var(--black-color);
+}
+
+.footer_entercode a:hover{
+    text-decoration: underline;
+}
+
+}

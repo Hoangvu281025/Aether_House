@@ -1,0 +1,256 @@
+a{
+    text-decoration: none;
+}
+button{
+    background: none;
+    border: none;
+}
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+.no-border{
+    border: none !important;
+}
+/* khoảng cách khung tới viền màn hình  */
+.pad{
+    padding: 0 20px;
+}
+
+.style_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 4rem;
+    position: relative;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: 1px solid var(--white-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.style_a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color);
+    transition: left 0.3s ease-in-out;
+    z-index: 0; /* nằm dưới chữ */
+}
+
+.style_a:hover::after {
+    left: 0;
+}
+
+.style_a span {
+    position: relative;
+    color: var(--black-color);
+    z-index: 1;
+    transition: color 0.3s ease-in-out; /* thêm transition cho mượt */
+}
+
+.style_a:hover span {
+    color: var(--white-color);
+}
+
+
+
+.discout-new::after{
+    content: 'New';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    background-color: var(--white-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.discout-10::after{
+    content: '10%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    background-color: var(--white-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.discout-20::after{
+    content: '20%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    background-color: var(--white-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.discout-30::after{
+    content: '30%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    background-color: var(--white-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.discout-40::after{
+    content: '40%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    background-color: var(--white-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.discout-50::after{
+    content: '50%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    background-color: var(--white-color);
+    padding: 0.8rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+@media (min-width:768px) {
+    .style_a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        height: 6rem;
+        position: relative;
+        background-color: var(--white-color);
+        color: var(--black-color);
+        border: 1px solid var(--white-color);
+        border-radius: 2.5rem;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        font-size: 1.6rem;
+    }
+
+    .style_a::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-color);
+        transition: left 0.3s ease-in-out;
+        z-index: 0; /* nằm dưới chữ */
+    }
+
+    .style_a:hover::after {
+        left: 0;
+    }
+
+    .style_a span {
+        position: relative;
+        color: var(--black-color);
+        z-index: 1;
+        transition: color 0.3s ease-in-out; /* thêm transition cho mượt */
+    }
+
+    .style_a:hover span {
+        color: var(--white-color);
+    }
+}
+@media (min-width: 1024px){
+
+}
+@media (min-width:1280px){
+    .pad{
+        padding-left:  40px;
+        padding-right:  40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .style_a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        height: 4.5rem;
+        position: relative;
+        /* padding: 4rem 0; */
+        background-color: var(--white-color);
+        color: var(--black-color);
+        border: 1px solid var(--white-color);
+        border-radius: 2.5rem;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        font-size: 1.6rem;
+    }
+
+    .style_a::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black-color);
+        transition: left 0.3s ease-in-out;
+        z-index: 0; /* nằm dưới chữ */
+    }
+
+    .style_a:hover::after {
+        left: 0;
+    }
+
+    .style_a span {
+        position: relative;
+        color: var(--black-color);
+        z-index: 1;
+        transition: color 0.3s ease-in-out; /* thêm transition cho mượt */
+    }
+
+    .style_a:hover span {
+        color: var(--white-color);
+    }
+}
