@@ -1,3 +1,46 @@
+<?php
+$data = [
+    [
+        'id' => 1,
+        'name' => 'Groove Arm Chair',
+        'discount' => 10,
+        'img_first' => '1.webp',
+        'img_second' => '1-1.webp',
+        'price' => 200000,
+        'col_span' => 1
+    ],
+    [
+        'id' => 2,
+        'name' => 'Groove Side Chair',
+        'discount' => 20,
+        'img_first' => '2.webp',
+        'img_second' => 'dewf.png',
+        'price' => 200000,
+        'col_span' => 2
+    ],
+    [
+        'id' => 3,
+        'name' => 'Groove Side Chair',
+        'discount' => 20,
+        'img_first' => '2.webp',
+        'img_second' => 'dewf.png',
+        'price' => 200000,
+        'col_span' => 1
+    ],
+    [
+        'id' => 4,
+        'name' => 'Groove Side Chair',
+        'discount' => 20,
+        'img_first' => '2.webp',
+        'img_second' => 'dewf.png',
+        'price' => 200000,
+        'col_span' => 1
+    ]
+];
+
+?>
+
+
 <div class="product ">
     <div class="sort_overlay"></div>
     <div class="product_title pad">
@@ -156,107 +199,42 @@
         </div>
     </div>
     <div class="product_list_col-1 pad" id="productList">
-        <div class="product_item ">
-            <div class="product_item-img discout-new">
-                <div class="product_item-img-container">
-                    <img src="/NT/public/images/product/1.webp" class="product-img" alt="">
-                    <img src="/NT/public/images/product/1-1.webp" class="product-img" alt="">
+        <?php 
+            foreach ($data as $item) : 
+                $final_price = $item['price'] - ($item['price'] * $item['discount'] / 100);
+                $col_item = ($item['col_span'] == 1) ? '' : '-big';
+        ?>
+            
+            <div class="product_item<?=$col_item?> ">
+                <div class="product_item-img discout-<?=$item['discount']?>">
+                    <div class="product_item-img-container">
+                        <img src="/NT/public/images/product/<?=$item['img_first']?>" class="product-img-first" alt="">
+                        <img src="/NT/public/images/product/<?=$item['img_second']?>" class="product-img-second" alt="">
+                    </div>
                 </div>
-                <div class="btn-left-right">
-                    <button class="btn-arrow btn-product-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-                    <button class="btn-arrow btn-product-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="product_item-content">
-                <div class="product_item-content-name-price">
-                    <h3 class="product_item-content-name">Product Name</h3>
-                    <p class="product_item-content-price">$100.00</p>
-                </div>
-                <div class="product_item-content-link-detail">
-                    <a href="?controller=product&action=detail&id=1" >
-                        <span class="product_item-content-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-add"><symbol id="icon-plus" fill="none" viewBox="0 0 16 16">
-                                <path d="M7.50033 8.5H3.66699V7.5H7.50033V3.66667H8.50033V7.5H12.3337V8.5H8.50033V12.3333H7.50033V8.5Z" fill="currentColor"></path>
-                                </symbol><use href="#icon-plus"></use>
-                            </svg>
-                            More option available
-                        </span>
-                    </a>
+                <div class="product_item-content">
+                    <div class="product_item-content-name-price">
+                        <h3 class="product_item-content-name"><?=$item['name']?></h3>
+                        <p class="product_item-content-price"><?=number_format($item['price'], 0, ',', '.')?></p>
+                        <p class="product_item-content-price"><?=number_format($final_price, 0, ',', '.')?></p>
+                    </div>
+                    <div class="product_item-content-link-detail">
+                        <a href="?controller=product&action=detail&id=1" >
+                            <span class="product_item-content-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-add"><symbol id="icon-plus" fill="none" viewBox="0 0 16 16">
+                                    <path d="M7.50033 8.5H3.66699V7.5H7.50033V3.66667H8.50033V7.5H12.3337V8.5H8.50033V12.3333H7.50033V8.5Z" fill="currentColor"></path>
+                                    </symbol><use href="#icon-plus"></use>
+                                </svg>
+                                More option available
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="product_item discout-10">
-            <div class="product_item-img">
-                <div class="product_item-img-container">
-                    <img src="/NT/public/images/product/1.webp" class="product-img" alt="">
-                    <img src="/NT/public/images/product/1-1.webp" class="product-img" alt="">
-                    
-                    
-                </div>
-                <div class="btn-left-right">
-                    <button class="btn-arrow btn-product-left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-                    <button class="btn-arrow btn-product-right">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="product_item-content">
-                <div class="product_item-content-name-price">
-                    <h3 class="product_item-content-name">Product Name</h3>
-                    <p class="product_item-content-price">$100.00</p>
-                </div>
-                <div class="product_item-content-link-detail">
-                    <a href="?controller=product&action=detail&id=1" >
-                        <span class="product_item-content-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-add"><symbol id="icon-plus" fill="none" viewBox="0 0 16 16">
-                                <path d="M7.50033 8.5H3.66699V7.5H7.50033V3.66667H8.50033V7.5H12.3337V8.5H8.50033V12.3333H7.50033V8.5Z" fill="currentColor"></path>
-                                </symbol><use href="#icon-plus"></use>
-                            </svg>
-                            More option available
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="product_item product_item-big">
-            <div class="product_item-img">
-                <div class="product_item-img-container">
-                    <img src="/NT/public/images/product/2.webp" class="product-img" alt="">
-                    <img src="/NT/public/images/product/2.webp" class="product-img" alt="">
-                </div>
-            </div>
-            <div class="product_item-content">
-                <div class="product_item-content-name-price">
-                    <h3 class="product_item-content-name">Product Name</h3>
-                    <p class="product_item-content-price">$100.00</p>
-                </div>
-                <div class="product_item-content-link-detail">
-                    <a href="?controller=product&action=detail&id=1" >
-                        <span class="product_item-content-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-add"><symbol id="icon-plus" fill="none" viewBox="0 0 16 16">
-                                <path d="M7.50033 8.5H3.66699V7.5H7.50033V3.66667H8.50033V7.5H12.3337V8.5H8.50033V12.3333H7.50033V8.5Z" fill="currentColor"></path>
-                                </symbol><use href="#icon-plus"></use>
-                            </svg>
-                            More option available
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div> -->
+        <?php endforeach ;?>
+        
+        
+        
         
     </div>
     <div id="loading_spinner">
