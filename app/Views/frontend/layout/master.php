@@ -31,11 +31,11 @@
     </div>
 
 
-    <script src="../public/js/header_navbar/navbar.js"></script>
-    <script src="../public/js/header_navbar/dropdown.js"></script>
-    <script src="../public/js/product/view_layout-product.js"></script>
-    <script src="../public/js/product/loading_product.js"></script>
-    <script src="../public/js/footer/footer.js"></script>
+    <script src="js/header_navbar/navbar.js"></script>
+    <script src="js/header_navbar/dropdown.js"></script>
+    <script src="js/product/view_layout-product.js"></script>
+    <script src="js/product/loading_product.js"></script>
+    <script src="js/footer/footer.js"></script>
 </body>
 </html>
 

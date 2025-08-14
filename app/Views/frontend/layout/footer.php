@@ -1,7 +1,5 @@
 <footer class="footer">
     <div class="footer__bg">
-            
-
         <div class="footer_content pad">
             <div class="footer_content__top">
                 <div class="footer_content__top-sologan col__top-left">

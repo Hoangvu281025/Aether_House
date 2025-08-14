@@ -101,11 +101,14 @@
 }
 .content_nav__category__item{
     position: relative;
-    font-size: 1.6rem;
-    font-weight: bold;
     padding: 2rem 0;
-    color: var(--black-color);
-
+}
+.content_nav__category__item a{
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 2rem 0;
+    color: inherit;
 }
 .dropdown__list{
     background-color: var(--white-color);

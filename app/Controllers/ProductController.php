@@ -1,9 +1,22 @@
 <?php
 
+include '../app/Models/ProductModel.php';
+
     class ProductController {
-        public function new() {
+
+        protected $productModel;
+
+        public function __construct()
+        {
+            $this ->productModel = new ProductModel();
+        }
+
+
+
+        public function newProduct() {
             $view = '../app/Views/frontend/products/product.php';
             $title = 'Products - Aether House';
+            $data = $this->productModel->getAll();
             include '../app/Views/frontend/layout/master.php';
         }
         public function lighting() {

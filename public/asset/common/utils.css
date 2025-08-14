@@ -67,6 +67,7 @@ ol, ul {
 .discout-new::after{
     content: 'New';
     position: absolute;
+    border-radius: 2rem;
     top: 0;
     left: 0;
     margin: 2rem;
@@ -78,6 +79,8 @@ ol, ul {
 .discout-10::after{
     content: '10%';
     position: absolute;
+    border-radius: 2rem;
+
     top: 0;
     left: 0;
     margin: 2rem;
@@ -89,6 +92,8 @@ ol, ul {
 .discout-20::after{
     content: '20%';
     position: absolute;
+    border-radius: 2rem;
+
     top: 0;
     left: 0;
     margin: 2rem;
@@ -100,6 +105,8 @@ ol, ul {
 .discout-30::after{
     content: '30%';
     position: absolute;
+    border-radius: 2rem;
+
     top: 0;
     left: 0;
     margin: 2rem;
@@ -111,6 +118,8 @@ ol, ul {
 .discout-40::after{
     content: '40%';
     position: absolute;
+    border-radius: 2rem;
+
     top: 0;
     left: 0;
     margin: 2rem;
@@ -122,6 +131,8 @@ ol, ul {
 .discout-50::after{
     content: '50%';
     position: absolute;
+    border-radius: 2rem;
+
     top: 0;
     left: 0;
     margin: 2rem;

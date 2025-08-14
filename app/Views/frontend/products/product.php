@@ -1,45 +1,3 @@
-<?php
-$data = [
-    [
-        'id' => 1,
-        'name' => 'Groove Arm Chair',
-        'discount' => 10,
-        'img_first' => '1.webp',
-        'img_second' => '1-1.webp',
-        'price' => 200000,
-        'col_span' => 1
-    ],
-    [
-        'id' => 2,
-        'name' => 'Groove Side Chair',
-        'discount' => 20,
-        'img_first' => '2.webp',
-        'img_second' => 'dewf.png',
-        'price' => 200000,
-        'col_span' => 2
-    ],
-    [
-        'id' => 3,
-        'name' => 'Groove Side Chair',
-        'discount' => 20,
-        'img_first' => '2.webp',
-        'img_second' => 'dewf.png',
-        'price' => 200000,
-        'col_span' => 1
-    ],
-    [
-        'id' => 4,
-        'name' => 'Groove Side Chair',
-        'discount' => 20,
-        'img_first' => '2.webp',
-        'img_second' => 'dewf.png',
-        'price' => 200000,
-        'col_span' => 1
-    ]
-];
-
-?>
-
 
 <div class="product ">
     <div class="sort_overlay"></div>
@@ -208,8 +166,8 @@ $data = [
             <div class="product_item<?=$col_item?> ">
                 <div class="product_item-img discout-<?=$item['discount']?>">
                     <div class="product_item-img-container">
-                        <img src="/NT/public/images/product/<?=$item['img_first']?>" class="product-img-first" alt="">
-                        <img src="/NT/public/images/product/<?=$item['img_second']?>" class="product-img-second" alt="">
+                        <img src="images/product/<?=$item['img_first']?>" class="product-img-first" alt="">
+                        <img src="images/product/<?=$item['img_second']?>" class="product-img-second" alt="">
                     </div>
                 </div>
                 <div class="product_item-content">

@@ -20,7 +20,7 @@
                 </div>
                 <div class="content_nav__category pad">
                     <ol class="content_nav__category__list">
-                        <li class="content_nav__category__item"><a href="?controller=product&action=new">New</a></li>
+                        <li class="content_nav__category__item"><a href="?controller=product&action=newProduct">New</a></li>
                         <li class="content_nav__category__item"><a href="?controller=product&action=lighting">Lighting</a></li>
                         <li class="content_nav__category__item"><a href="?controller=product&action=new">Furniture</a></li>
                         <li class="content_nav__category__item"><a href="?controller=product&action=new">Accessories</a></li>
