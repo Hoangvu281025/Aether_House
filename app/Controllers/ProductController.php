@@ -11,8 +11,6 @@ include '../app/Models/ProductModel.php';
             $this ->productModel = new ProductModel();
         }
 
-
-
         public function newProduct() {
             $view = '../app/Views/frontend/products/product.php';
             $title = 'Products - Aether House';

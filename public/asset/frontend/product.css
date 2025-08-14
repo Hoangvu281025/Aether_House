@@ -50,7 +50,7 @@
 
 .product_filter{
     position: sticky;
-    top: 100px;
+    top: 0px;
     z-index: 1000;
     width: calc(100% - 1rem);
     left: 0.5rem;
@@ -131,7 +131,9 @@ input[type="radio"] {
     accent-color: var(--black-color); 
     cursor: pointer;
 }
-
+.sort_by{
+    display: none;
+}
 
 
 
