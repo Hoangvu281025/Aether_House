@@ -1,7 +1,7 @@
 <div class="container_login pad">
     <div class="table_form">
         <div class="logo">
-            <a href="?controller=home"><img src="/NT/public/images/logo.svg" alt=""></a>
+            <a href="?controller=home"><img src="images/logo.svg" alt=""></a>
         </div>
         <div class="title">
             <p>Đăng nhập</p>
