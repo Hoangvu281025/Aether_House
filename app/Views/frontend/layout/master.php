@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../public/asset/frontend/style.css">
-    <link rel="stylesheet" href="../public/asset/frontend/layout/header.css">
-    <link rel="stylesheet" href="../public/asset/frontend/layout/footer.css">
-    <link rel="stylesheet" href="../public/asset/frontend/product.css">
-    <link rel="stylesheet" href="../public/asset/frontend/store.css">
+    <link rel="stylesheet" href="asset/frontend/style.css">
+    <link rel="stylesheet" href="asset/frontend/layout/header.css">
+    <link rel="stylesheet" href="asset/frontend/layout/footer.css">
+    <link rel="stylesheet" href="asset/frontend/product.css">
+    <link rel="stylesheet" href="asset/frontend/store.css">
     <title><?=$title ?? "trang mặc định"?></title>
 </head>
 <body>
